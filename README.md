@@ -16,6 +16,18 @@ September 29th, 2022
 
     Honestly, outside of the JWT shit which I basically jerry-rigged, most of this stuff is kinda straightforward. Within like 15 minutes I've got like buttons working on both comments and posts with DB integration.
 
+September 30th, 2022
+
+    If I go fucking hard in the paint today, I may actually finish before end of day. All thanks to the song Lemonade by Dwellings. This would probably be the first time in many months that I've finished a project anywhere near to my goal timeline.
+
+    Best news is, I've mostly only got styling stuff to do. Worst news is, I came up with a stupidly complicated system for the layout. You, the user, are sat at an old-school but slightly odd looking computer. The setting is some sort of 90s/futurisitic/magic setting. The main storage medium is floppy disks, but in this reality they're actually just caps for these crystals that actually store data. The crystals change color/brightness/saturation or whatever based on the type of data/size of data stored. (This is an idea I stole from a manga I read part of. Isekai Meikyuu de Harem is the manga, and if you know a little English and a little Japanese you can guess the topic of the series. But you would actually be wrong. Well maybe half wrong. The cover implies that this will be a non-stop horny fan-service romp, but it actually mainly focuses on MC-chan trying to learn the very specific mechanics of the fantasy game world he finds himself in. The manga is actually mostly pretty dry, and doesn't spend much time focusing on battles or politics. Instead it's very similar to the experience of playing a new game with lots of mechanics, as an experienced gamer. MC-chan gets the general lay of the land pretty quickly, but many systems are mysteries to him that only get revealed slowly over time. He also bangs the shit out of his slave beast-girl. Back to crystals. There are these soul-gem things similar to those in Skyrim, except they can hold tons of dead creatures souls compared to Skyrim's one. In that world, they glow different colors based on the amount of souls they contain. So that is the idea I stole for this project.)
+
+    Typical. I get one solid idea and all of a sudden I have to learn to 3d model in CSS.
+
+    Been at it for over 9 hours today, and I think I might call it quits here for now. Got some cool stuff going.
+
+
+
 ---To-Do---
 
 -origin validation
@@ -24,3 +36,8 @@ September 29th, 2022
 -better in window sign in error messages
 -require admin to post new content
 -add a selection of icons to choose from on signup
+-prevent commenting 0 length comments
+-better responsiveness
+-pc content change animation
+-check window resize for disk layout?
+-differnt crystal colors
