@@ -12,11 +12,14 @@ const { body, validationResult } = require("express-validator");
 exports.user_create_post = [
 
     // Validate and sanitize fields.
-    body('username').trim().isLength({ min: 3, max: 16 }).escape().withMessage('Username must contain at least 3 characters.'),
+    body('username').trim().isLength({ min: 3, max: 16 }).escape().withMessage('Username must contain between 3 and 6 characters..'),
     [validateConfirmPassword],
 
     // Process request after validation and sanitization.
     (req, res, next) => {
+
+        console.log(req.body.password);
+        console.log(req.body.username);
 
         // Extract the validation errors from a request.
         const errors = validationResult(req);
@@ -53,6 +56,7 @@ exports.user_create_post = [
                     // Save user.
                     user.save(function (err) {
                         if (err) { return next(err); }
+                        res.json(true);
                     });
                 }
             });
@@ -84,7 +88,7 @@ exports.user_signin_post = (req, response, next) => {
                 const secret = process.env.SECRET_KEY
                 const token = jwt.sign({ username }, secret, opts);
                 return response.status(200).json({
-                    message: "Auth Passed",
+                    message: "User signed in succesfully",
                     token,
                     user: results
                 })
