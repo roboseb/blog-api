@@ -8,7 +8,7 @@ const User = require('../models/user');
 // POST request for adding a new message.
 exports.new_comment_post = [
     // Validate and sanitize message.
-    body('comment').trim(),
+    body('comment').trim().isLength({min: 1}).withMessage('Comment must have content'),
 
     // Process request after validation and sanitization.
     (req, res, next) => {
@@ -57,7 +57,7 @@ exports.new_comment_post = [
 exports.comments_get = (req, res, next) => {
     async.parallel({
         comment_list(callback) {
-            Comment.find({}, callback); // Pass an empty object as match condition to find all documents of this collection
+            Comment.find({}).sort({postDate: -1}).exec(callback); // Pass an empty object as match condition to find all documents of this collection
         },
     },
         (err, results) => {

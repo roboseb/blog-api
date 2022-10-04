@@ -18,9 +18,6 @@ exports.user_create_post = [
     // Process request after validation and sanitization.
     (req, res, next) => {
 
-        console.log(req.body.password);
-        console.log(req.body.username);
-
         // Extract the validation errors from a request.
         const errors = validationResult(req);
 
@@ -41,7 +38,7 @@ exports.user_create_post = [
                     // Create Author object with escaped/trimmed/encrypted data.
 
                     // List of profile pics in custom dingbat font.
-                    const picChoices = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'o']
+                    const picChoices = ['a', 'b', 'c', 'd', 'U', 'f', 'i', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
                     var user = new User(
                         {

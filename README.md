@@ -34,24 +34,28 @@ September 3rd, 2022
 
     I forgot to make a sign-up page.
 
+October 4th, 2022
+
+    Welcome to the 5th day of my 3 day project. Despite everything, I think it's better to take a little longer and have something worth showing off, compared to a short project that has no portfolio value.
+
 ---To-Do---
 
 DONE(?)-origin validation
 -update fetch routes
 -change form action route
--check sign in on CMS form
--better in window sign in error messages
--require admin to post new content
--add a selection of icons to choose from on signup
--prevent commenting 0 length comments
--better responsiveness
+DONE(What did I mean by this, exactly?)-check sign in on CMS form
+DONE-better in window sign in error messages
+DONE-require admin to post new content
+CANCEL-add a selection of icons to choose from on signup
+DONE-prevent commenting 0 length comments
+DONE-better responsiveness
 DONE-pc content change animation
--general better styling
--check window resize for disk layout?
+DONE-general better styling
+DONE-check window resize for disk layout?
 DONE-differnt crystal colors
 DONE-instructions on screen when no disk loaded
 CANCEL-limit like count?
--better placeholder posts
--move sign in
--add user profile pics (dingbats again?)
--add dates
+DONE-better placeholder posts
+DONE-move sign in
+DONE-add user profile pics (dingbats again?)
+DONE-add dates

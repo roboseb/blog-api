@@ -18,6 +18,7 @@ const formData = require('express-form-data');
 const os = require("os");
 
 var indexRouter = require('./routes/index');
+const compression = require("compression");
 
 var app = express();
 
@@ -38,9 +39,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(helmet());
 
-
+app.use(compression());
+const helmet = require("helmet");
 app.use('/', indexRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
