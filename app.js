@@ -45,7 +45,8 @@ app.use(helmet());
 app.use(compression());
 
 const corsOptions = {
-    origin: 'https://roboseb.github.io/',
+    origin: 'https://roboseb.github.io',
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     optionsSuccessStatus: 200 // For legacy browser support
 }
 
