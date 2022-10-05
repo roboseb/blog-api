@@ -9,6 +9,7 @@ const LocalStrategy = require("passport-local").Strategy;
 const session = require("express-session");
 const bcrypt = require('bcryptjs');
 const cors = require('cors');
+const helmet = require("helmet");
 
 const jwt = require("jsonwebtoken");
 const jwtStrategry = require("./strategies/jwt")
@@ -42,7 +43,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(helmet());
 
 app.use(compression());
-const helmet = require("helmet");
+
 app.use('/', indexRouter);
 
 
