@@ -67,7 +67,9 @@ app.get("/protected", passport.authenticate('jwt', { session: false }), (req, re
     return res.status(200).send("YAY! this is a protected Route")
 });
 
-app.options('*', cors())
+app.use(cors({
+    origin: ['https://roboseb.github.io/blog-api-client']
+}));
 
 
 module.exports = app;
