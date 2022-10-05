@@ -68,7 +68,7 @@ app.get("/protected", passport.authenticate('jwt', { session: false }), (req, re
 });
 
 app.use(cors({
-    origin: ['https://roboseb.github.io/blog-api-client']
+    origin: ['https://roboseb.github.io']
 }));
 
 
