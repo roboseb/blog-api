@@ -44,7 +44,7 @@ app.use(helmet());
 
 app.use(compression());
 
-app.options('*', cors())
+app.use(cors());
 
 app.use('/', indexRouter);
 
