@@ -44,7 +44,12 @@ app.use(helmet());
 
 app.use(compression());
 
-app.use(cors());
+const corsOptions = {
+    origin: 'https://roboseb.github.io/',
+    optionsSuccessStatus: 200 // For legacy browser support
+}
+
+app.use(cors(corsOptions));
 
 app.use('/', indexRouter);
 
