@@ -44,6 +44,8 @@ app.use(helmet());
 
 app.use(compression());
 
+app.options('*', cors())
+
 app.use('/', indexRouter);
 
 
@@ -71,7 +73,7 @@ app.get("/protected", passport.authenticate('jwt', { session: false }), (req, re
 //     origin: ['https://roboseb.github.io']
 // }));
 
-app.options('*', cors())
+
 
 
 module.exports = app;
